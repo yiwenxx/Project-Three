@@ -1,7 +1,372 @@
-/* Decent Defaults */
+/* General */
 
 img,
 video {
   width: 100%;
   height: auto;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a {
+  color: #1abc9c;
+}
+
+a:hover {
+  color: #16a085;
+}
+
+a,
+img,
+.overlay,
+input {
+  /*transition*/
+  -webkit-transition: all 0.12s linear;
+  -moz-transition: all 0.12s linear;
+  -o-transition: all 0.12s linear;
+  transition: all 0.12s linear;
+}
+
+blockquote {
+  line-height: 1.2em;
+  display: inline-block;
+  margin: 1.3em 0;
+  padding: 2px 20px 0 20px;
+  border-left: 3px solid #e8e8e8;
+}
+
+blockquote p {
+  margin-bottom: 0 !important;
+}
+
+body {
+  font-size: 1.1em;
+  line-height: 1.6em;
+  font-weight: normal;
+  font-family: "Public Sans", sans-serif;
+}
+
+/* Header */
+#top-header {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  padding: 23px 0;
+}
+
+#top-header .grid {
+  overflow: visible;
+}
+
+.logo {
+  display: block;
+  float: left;
+  width: 104px;
+  height: 46px;
+  text-indent: -9999px;
+}
+
+.logo:hover,
+.logo:focus {
+  -webkit-animation: rubberBand 0.5s 1;
+  -moz-animation: rubberBand 0.5s 1;
+  -o-animation: rubberBand 0.5s 1;
+  animation: rubberBand 0.5s 1;
+}
+
+.header-home {
+  background: transparent;
+}
+
+.header-home .navigation a {
+  color: #fff;
+}
+
+/* Navigation */
+
+.navigation {
+  position: relative;
+  float: right;
+  margin: 10px 0 0 0;
+  padding-right: 5em;
+}
+
+.navigation ul li {
+  position: relative;
+  display: inline;
+  float: left;
+}
+
+.navigation a {
+  font-size: 1em;
+  display: block;
+  margin-left: 30px;
+  padding-bottom: 3px;
+  text-decoration: none;
+  font-family: "Public Sans", sans-serif;
+  color: #fff;
+}
+
+.navigation .current a,
+.navigation ul li a:hover,
+.navigation ul li a:focus {
+  color: rgb(51, 84, 99);
+}
+
+.navigation li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Parallax */
+
+.parallax-section {
+  z-index: -1;
+  clear: both;
+  background-image: url(../img/background.jpg);
+  background-repeat: contain;
+  background-attachment: fixed;
+  height: 90vh;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content h2 {
+  margin-top: 2em;
+  font-size: 5em;
+  letter-spacing: 4px;
+  color: white;
+  font-weight: bolder;
+}
+
+.curveUpColor,
+.curveDownColor {
+  fill: #fff;
+  stroke: #fff;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.curveUpColor {
+  margin-top: -100px;
+}
+.curveDownColor {
+  margin-bottom: 100px;
+}
+
+/* Main */
+.type {
+  text-align: center;
+  height: auto;
+}
+
+.type h1 {
+  font-family: "Black Ops One", cursive;
+  font-size: 3em;
+  font-weight: bolder;
+  margin: 1em 0 0.8em 0;
+  font-style: italic;
+  color: rgb(52, 52, 52);
+}
+
+#header {
+  font-style: normal;
+}
+
+/* Quotes */
+.slider {
+  width: 800px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.slide.description {
+  width: 800px;
+  height: 500px;
+}
+
+/* manual navigation */
+
+.typecards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 45vh 45vh;
+  column-gap: 3em;
+  row-gap: 3em;
+  margin: 4em 6em 5em 6em;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+  perspective: 1000px;
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card-front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(130, 105, 163);
+  color: #fff;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: rgb(220, 210, 236);
+  color: rgb(52, 52, 52);
+}
+
+.pic {
+  display: block;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 5px solid #fff;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.card-front h2 {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.card-back p {
+  line-height: 1.5em;
+  margin: 2.5em 2.5em 0 2.5em;
+  text-align: left;
+}
+
+.sw-btn {
+  width: 110px;
+  height: 30px;
+  margin-left: 2.5em;
+  border-radius: 25px;
+  background-color: rgb(130, 105, 163);
+  color: #fff;
+}
+
+.strength {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 13px;
+  margin-top: 25px;
+}
+
+.weakness {
+  display: flex;
+  flex-direction: row;
+}
+
+.strength p,
+.weakness p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 auto;
+  padding-left: 1em;
+}
+
+.diplomats {
+  height: auto;
+  background-color: #e1edeb;
+  padding-bottom: 4em;
+}
+
+#dip {
+  padding-top: 180px;
+  color: rgb(101, 163, 118);
+  text-shadow: 2px 2px rgb(209, 229, 217);
+}
+
+.dip-color-front,
+.dip-btn {
+  background-color: rgb(101, 163, 118);
+}
+
+.dip-color-back {
+  background-color: rgb(209, 229, 217);
+}
+
+#sen {
+  color: rgb(100, 150, 177);
+  text-shadow: 2px 2px rgb(221, 233, 239);
+}
+
+.sen-color-front,
+.sen-btn {
+  background-color: rgb(100, 150, 177);
+}
+
+.sen-color-back {
+  background-color: rgb(221, 233, 239);
+}
+
+#exp {
+  color: rgb(213, 172, 69);
+  text-shadow: 2px 2px rgb(245, 234, 213);
+}
+
+.explorers {
+  height: auto;
+  background-color: rgb(245, 239, 225);
+  padding-bottom: 4em;
+  padding-top: 150px;
+}
+
+.exp-color-front,
+.exp-btn {
+  background-color: rgb(213, 172, 69);
+}
+
+.exp-color-back {
+  background-color: rgb(245, 234, 210);
 }

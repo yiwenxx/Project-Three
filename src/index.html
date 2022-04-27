@@ -6,10 +6,680 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Public+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <script src="./js/main.js" defer></script>
-    <title>Document</title>
+    <title>Project Three</title>
   </head>
   <body>
-    Hello, world!
+    <!-- Header -->
+    <header id="top-header" class="header-home">
+      <div class="logo-wrap">
+        <a href="#0" class="logo">MBTI</a>
+      </div>
+      <nav class="navigation">
+        <ul class="nav-container">
+          <li><a href="#home" class="current">Home</a></li>
+          <li><a href="#services">MBTI Types</a></li>
+          <li><a href="#work">Meme</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Parallax Section -->
+    <div class="parallax-section">
+      <div class="content">
+        <h2>MBTI Personalities</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, fuga,
+          consectetur sequi consequuntur nisi placeat ullam maiores perferendis.
+          Quod, nihil reiciendis saepe optio libero minus et beatae ipsam
+          reprehenderit sequi.
+        </p>
+      </div>
+    </div>
+    <!-- End Parallax Section -->
+
+    <!-- CurveUp -->
+    <svg
+      class="curveUpColor"
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      width="100%"
+      height="100"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <path d="M0 100 C 20 0 50 0 100 100 Z"></path>
+    </svg>
+
+    <!-- Quotes -->
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1" />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <input type="radio" name="radio-btn" id="radio3" />
+        <input type="radio" name="radio-btn" id="radio4" />
+
+        <div class="slide first">
+          <div class="description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum,
+              fuga, consectetur sequi consequuntur nisi placeat ullam maiores
+              perferendis. Quod, nihil reiciendis saepe optio libero minus et
+              beatae ipsam reprehenderit sequi.
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum,
+              fuga, consectetur sequi consequuntur nisi placeat ullam maiores
+              perferendis. Quod, nihil reiciendis saepe optio libero minus et
+              beatae ipsam reprehenderit sequi.
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum,
+              fuga, consectetur sequi consequuntur nisi placeat ullam maiores
+              perferendis. Quod, nihil reiciendis saepe optio libero minus et
+              beatae ipsam reprehenderit sequi.
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum,
+              fuga, consectetur sequi consequuntur nisi placeat ullam maiores
+              perferendis. Quod, nihil reiciendis saepe optio libero minus et
+              beatae ipsam reprehenderit sequi.
+            </p>
+          </div>
+        </div>
+
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="type">
+        <h1 id="header">Personality Types</h1>
+        <div class="analyst">
+          <h1
+            style="
+              color: rgb(130, 105, 163);
+              text-shadow: 2px 2px rgb(220, 210, 236);
+            "
+          >
+            Analysts
+          </h1>
+          <hr
+            style="
+              height: 8px;
+              width: 100px;
+              border-width: 0;
+              background-color: rgb(220, 210, 236);
+              margin: 0 auto;
+            "
+          />
+
+          <div class="typecards">
+            <div class="card">
+              <div class="card-face card-front">
+                <img src="./img/architect.png" alt="architect" class="pic" />
+                <div class="pattern"></div>
+                <h2>Architect</h2>
+                <h3>INTJ-A / INTJ-T</h3>
+              </div>
+              <div class="card-face card-back">
+                <p>
+                  An Architect (INTJ) is a person with the Introverted,
+                  Intuitive, Thinking, and Judging personality traits. These
+                  thoughtful tacticians love perfecting the details of life,
+                  applying creativity and rationality to everything they do.
+                  Their inner world is often a private, complex one.
+                </p>
+                <div class="strength">
+                  <div class="sw-btn">Strength</div>
+                  <p>Rational / Informed / Independent</p>
+                </div>
+                <div class="weakness">
+                  <div class="sw-btn">Weakness</div>
+                  <p>Arrogant / Combative / Overly Critical</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-face card-front">
+                <img src="./img/Logician.png" alt="architect" class="pic" />
+                <div class="pattern"></div>
+                <h2>Logician</h2>
+                <h3>INTP-A / INTP-T</h3>
+              </div>
+              <div class="card-face card-back">
+                <p>
+                  A Logician (INTP) is someone with the Introverted, Intuitive,
+                  Thinking, and Prospecting personality traits. These flexible
+                  thinkers enjoy taking an unconventional approach to many
+                  aspects of life. They often seek out unlikely paths, mixing
+                  willingness to experiment with personal creativity.
+                </p>
+                <div class="strength">
+                  <div class="sw-btn">Strength</div>
+                  <p>Analytical / Original / Open-minded</p>
+                </div>
+                <div class="weakness">
+                  <div class="sw-btn">Weakness</div>
+                  <p>Disconnected / Insensitive / Dissatisfied</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-face card-front">
+                <img src="./img/commander.png" alt="architect" class="pic" />
+                <div class="pattern"></div>
+                <h2>Commander</h2>
+                <h3>ENTJ-A / ENTJ-T</h3>
+              </div>
+              <div class="card-face card-back">
+                <p>
+                  A Commander (ENTJ) is someone with the Extraverted, Intuitive,
+                  Thinking, and Judging personality traits. They are decisive
+                  people who love momentum and accomplishment. They gather
+                  information to construct their creative visions but rarely
+                  hesitate for long before acting on them.
+                </p>
+                <div class="strength">
+                  <div class="sw-btn">Strength</div>
+                  <p>Efficient / Energetic / Self-Confident</p>
+                </div>
+                <div class="weakness">
+                  <div class="sw-btn">Weakness</div>
+                  <p>Intolerant / Impatient / Cold and Ruthless</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-face card-front">
+                <img src="./img/debater.png" alt="architect" class="pic" />
+                <div class="pattern"></div>
+                <h2>Debater</h2>
+                <h3>ENTP-A / ENTP-T</h3>
+              </div>
+              <div class="card-face card-back">
+                <p>
+                  A Debater (ENTP) is a person with the Extraverted, Intuitive,
+                  Thinking, and Prospecting personality traits. They tend to be
+                  bold and creative, deconstructing and rebuilding ideas with
+                  great mental agility. They pursue their goals vigorously
+                  despite any resistance they might encounter.
+                </p>
+                <div class="strength">
+                  <div class="sw-btn">Strength</div>
+                  <p>Knowledgeable / Quick Thinkers / Energetic</p>
+                </div>
+                <div class="weakness">
+                  <div class="sw-btn">Weakness</div>
+                  <p>Insensitive / Intolerant / Very Argumentative</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CurveDown -->
+    <svg
+      class="curveDownColor"
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      width="100%"
+      height="100"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <path d="M0 0 C 50 100 80 100 100 0 Z"></path>
+    </svg>
+
+    <section>
+      <div class="type">
+        <div class="diplomats">
+          <h1 id="dip">Diplomats</h1>
+          <hr
+            style="
+              height: 8px;
+              width: 100px;
+              border-width: 0;
+              background-color: rgb(209, 229, 217);
+              margin: 0 auto;
+            "
+          />
+
+          <div class="typecards">
+            <div class="card">
+              <div class="card-face card-front dip-color-front">
+                <img src="./img/Advocate.png" alt="architect" class="pic" />
+                <div class="pattern"></div>
+                <h2>Advocate</h2>
+                <h3>INFJ-A / INFJ-T</h3>
+              </div>
+              <div class="card-face card-back dip-color-back">
+                <p>
+                  An Advocate (INFJ) is someone with the Introverted, Intuitive,
+                  Feeling, and Judging personality traits. They tend to approach
+                  life with deep thoughtfulness and imagination. Their inner
+                  vision, personal values, and a quiet, principled version of
+                  humanism guide them in all things.
+                </p>
+                <div class="strength">
+                  <div class="sw-btn dip-btn">Strength</div>
+                  <p>Creative / Insightful / Principled</p>
+                </div>
+                <div class="weakness">
+                  <div class="sw-btn dip-btn">Weakness</div>
+                  <p>Sensitive to Criticism / Reluctant to Open Up</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-face card-front dip-color-front">
+                <img src="./img/Mediator.png" alt="architect" class="pic" />
+                <div class="pattern"></div>
+                <h2>Mediator</h2>
+                <h3>INFP-A / INFP-T</h3>
+              </div>
+              <div class="card-face card-back dip-color-back">
+                <p>
+                  A Mediator (INFP) is someone who possesses the Introverted,
+                  Intuitive, Feeling, and Prospecting personality traits. These
+                  rare personality types tend to be quiet, open-minded, and
+                  imaginative, and they apply a caring and creative approach to
+                  everything they do.
+                </p>
+                <div class="strength">
+                  <div class="sw-btn dip-btn">Strength</div>
+                  <p>Empathetic / Generous / Idealistic</p>
+                </div>
+                <div class="weakness">
+                  <div class="sw-btn dip-btn">Weakness</div>
+                  <p>Unrealistic / Self-Isolating / Unfocused</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-face card-front dip-color-front">
+                <img src="./img/Protagonist.png" alt="architect" class="pic" />
+                <div class="pattern"></div>
+                <h2>Protagonist</h2>
+                <h3>ENFJ-A / ENFJ-T</h3>
+              </div>
+              <div class="card-face card-back dip-color-back">
+                <p>
+                  A Protagonist (ENFJ) is a person with the Extraverted,
+                  Intuitive, Feeling, and Judging personality traits. These
+                  warm, forthright types love helping others, and they tend to
+                  have strong ideas and values. They back their perspective with
+                  the creative energy to achieve their goals.
+                </p>
+                <div class="strength">
+                  <div class="sw-btn dip-btn">Strength</div>
+                  <p>Receptive / Reliable / Charismatic</p>
+                </div>
+                <div class="weakness">
+                  <div class="sw-btn dip-btn">Weakness</div>
+                  <p>Unrealistic / Condescending / Intense</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-face card-front dip-color-front">
+                <img src="./img/Campaigner.png" alt="architect" class="pic" />
+                <div class="pattern"></div>
+                <h2>Campaigner</h2>
+                <h3>ENFP-A / ENFP-T</h3>
+              </div>
+              <div class="card-face card-back dip-color-back">
+                <p>
+                  A Campaigner (ENFP) is someone with the Extraverted,
+                  Intuitive, Feeling, and Prospecting personality traits. These
+                  people tend to embrace big ideas and actions that reflect
+                  their sense of hope and goodwill toward others. Their vibrant
+                  energy can flow in many directions.
+                </p>
+                <div class="strength">
+                  <div class="sw-btn dip-btn">Strength</div>
+                  <p>Curious / Enthusiastic / Good-Natureds</p>
+                </div>
+                <div class="weakness">
+                  <div class="sw-btn dip-btn">Weakness</div>
+                  <p>Unfocused / Disorganized / Overly Accommodating</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CurveUp -->
+    <svg
+      class="curveUpColor"
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      width="100%"
+      height="100"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <path d="M0 100 C 20 0 50 0 100 100 Z"></path>
+    </svg>
+
+    <section>
+      <div class="type">
+        <div class="sentinals">
+          <h1 id="sen">Sentinals</h1>
+          <hr
+            style="
+              height: 8px;
+              width: 100px;
+              border-width: 0;
+              background-color: rgb(221, 233, 239);
+              margin: 0 auto;
+            "
+          />
+
+          <div class="typecards">
+            <div class="card">
+              <div class="card-face card-front sen-color-front">
+                <img
+                  src="./img/Logistician.png"
+                  alt="logistician"
+                  class="pic"
+                />
+                <div class="pattern"></div>
+                <h2>Logistician</h2>
+                <h3>ISTJ-A / ISTJ-T</h3>
+              </div>
+              <div class="card-face card-back sen-color-back">
+                <p>
+                  A Logistician (ISTJ) is someone with the Introverted,
+                  Observant, Thinking, and Judging personality traits. These
+                  people tend to be reserved yet willful, with a rational
+                  outlook on life. They compose their actions carefully and
+                  carry them out with methodical purpose.
+                </p>
+                <div class="strength">
+                  <div class="sw-btn sen-btn">Strength</div>
+                  <p>Honest and Direct / Strong-willed and Dutiful</p>
+                </div>
+                <div class="weakness">
+                  <div class="sw-btn sen-btn">Weakness</div>
+                  <p>Stubborn / Insensitive / Judgmental</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-face card-front sen-color-front">
+                <img src="./img/Defender.png" alt="Defender" class="pic" />
+                <div class="pattern"></div>
+                <h2>Defender</h2>
+                <h3>ISFJ-A / ISFJ-T</h3>
+              </div>
+              <div class="card-face card-back sen-color-back">
+                <p>
+                  A Defender (ISFJ) is someone with the Introverted, Observant,
+                  Feeling, and Judging personality traits. These people tend to
+                  be warm and unassuming in their own steady way. They’re
+                  efficient and responsible, giving careful attention to
+                  practical details in their daily lives.
+                </p>
+                <div class="strength">
+                  <div class="sw-btn sen-btn">Strength</div>
+                  <p>Supportive / Observant / Hardworking</p>
+                </div>
+                <div class="weakness">
+                  <div class="sw-btn sen-btn">Weakness</div>
+                  <p>Overly Humble / Overcommitted / Too Altruistic</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-face card-front sen-color-front">
+                <img src="./img/Executive.png" alt="Executive" class="pic" />
+                <div class="pattern"></div>
+                <h2>Executive</h2>
+                <h3>ESTJ-A / ESTJ-T</h3>
+              </div>
+              <div class="card-face card-back sen-color-back">
+                <p>
+                  An Executive (ESTJ) is someone with the Extraverted,
+                  Observant, Thinking, and Judging personality traits. They
+                  possess great fortitude, emphatically following their own
+                  sensible judgment. They often serve as a stabilizing force
+                  among others, able to offer solid direction amid adversity.
+                </p>
+                <div class="strength">
+                  <div class="sw-btn sen-btn">Strength</div>
+                  <p>Dedicated / Strong-willed / Direct and Honest</p>
+                </div>
+                <div class="weakness">
+                  <div class="sw-btn sen-btn">Weakness</div>
+                  <p>Inflexible and Stubborn / Difficult to Relax</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-face card-front sen-color-front">
+                <img src="./img/Consul.png" alt="Consul" class="pic" />
+                <div class="pattern"></div>
+                <h2>Consul</h2>
+                <h3>ESFJ-A / ESFJ-T</h3>
+              </div>
+              <div class="card-face card-back sen-color-back">
+                <p>
+                  A Consul (ESFJ) is a person with the Extraverted, Observant,
+                  Feeling, and Judging personality traits. They are attentive
+                  and people-focused, and they enjoy taking part in their social
+                  community. Their achievements are guided by decisive values,
+                  and they willingly offer guidance to others.
+                </p>
+                <div class="strength">
+                  <div class="sw-btn sen-btn">Strength</div>
+                  <p>Strong Practical Skills / Sensitive and Warm</p>
+                </div>
+                <div class="weakness">
+                  <div class="sw-btn sen-btn">Weakness</div>
+                  <p>Reluctant to Innovate / Vulnerable to Criticism</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CurveDown -->
+    <svg
+      class="curveDownColor"
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      width="100%"
+      height="100"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <path d="M0 0 C 50 100 80 100 100 0 Z"></path>
+    </svg>
+
+    <section>
+      <div class="type">
+        <div class="explorers">
+          <h1 id="exp">Explorers</h1>
+          <hr
+            style="
+              height: 8px;
+              width: 100px;
+              border-width: 0;
+              background-color: rgb(245, 234, 210);
+              margin: 0 auto;
+            "
+          />
+
+          <div class="typecards">
+            <div class="card">
+              <div class="card-face card-front exp-color-front">
+                <img src="./img/Virtuoso.png" alt="Virtuoso" class="pic" />
+                <div class="pattern"></div>
+                <h2>Virtuoso</h2>
+                <h3>ISTP-A / ISTP-T</h3>
+              </div>
+              <div class="card-face card-back exp-color-back">
+                <p>
+                  A Virtuoso (ISTP) is someone with the Introverted, Observant,
+                  Thinking, and Prospecting personality traits. They tend to
+                  have an individualistic mindset, pursuing goals without
+                  needing much external connection. They engage in life with
+                  inquisitiveness and personal skill, varying their approach as
+                  needed.
+                </p>
+                <div class="strength">
+                  <div class="sw-btn exp-btn">Strength</div>
+                  <p>Optimistic / Spontaneous and Rational</p>
+                </div>
+                <div class="weakness">
+                  <div class="sw-btn exp-btn">Weakness</div>
+                  <p>Private and Reserved / Risky Behavior</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-face card-front exp-color-front">
+                <img src="./img/Adventurer.png" alt="Adventurer" class="pic" />
+                <div class="pattern"></div>
+                <h2>Adventurer</h2>
+                <h3>ISFP-A / ISFP-T</h3>
+              </div>
+              <div class="card-face card-back exp-color-back">
+                <p>
+                  An Adventurer (ISFP) is a person with the Introverted,
+                  Observant, Feeling, and Prospecting personality traits. They
+                  tend to have open minds, approaching life, new experiences,
+                  and people with grounded warmth. Their ability to stay in the
+                  moment helps them uncover exciting potentials.
+                </p>
+                <div class="strength">
+                  <div class="sw-btn exp-btn">Strength</div>
+                  <p>Charming / Imaginative / Passionate</p>
+                </div>
+                <div class="weakness">
+                  <div class="sw-btn exp-btn">Weakness</div>
+                  <p>Fiercely Independent / Fluctuating Self-Esteem</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-face card-front exp-color-front">
+                <img
+                  src="./img/Entrepreneur.png"
+                  alt="Entrepreneur"
+                  class="pic"
+                />
+                <div class="pattern"></div>
+                <h2>Entrepreneur</h2>
+                <h3>ESTP-A / ESTP-T</h3>
+              </div>
+              <div class="card-face card-back exp-color-back">
+                <p>
+                  An Entrepreneur (ESTP) is someone with the Extraverted,
+                  Observant, Thinking, and Prospecting personality traits. They
+                  tend to be energetic and action-oriented, deftly navigating
+                  whatever is in front of them. They love uncovering life’s
+                  opportunities, whether socializing with others or in more
+                  personal pursuits.
+                </p>
+                <div class="strength">
+                  <div class="sw-btn exp-btn">Strength</div>
+                  <p>Bold / Rational and Practical / Direct</p>
+                </div>
+                <div class="weakness">
+                  <div class="sw-btn exp-btn">Weakness</div>
+                  <p>Impatient / Risk-prone / Unstructured</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-face card-front exp-color-front">
+                <img
+                  src="./img/Entertainer.png"
+                  alt="Entertainer"
+                  class="pic"
+                />
+                <div class="pattern"></div>
+                <h2>Entertainer</h2>
+                <h3>ESFP-A / ESFP-T</h3>
+              </div>
+              <div class="card-face card-back exp-color-back">
+                <p>
+                  An Entertainer (ESFP) is a person with the Extraverted,
+                  Observant, Feeling, and Prospecting personality traits. These
+                  people love vibrant experiences, engaging in life eagerly and
+                  taking pleasure in discovering the unknown. They can be very
+                  social, often encouraging others into shared activities.
+                </p>
+                <div class="strength">
+                  <div class="sw-btn exp-btn">Strength</div>
+                  <p>Aesthetics and Showmanship / Original / Bold</p>
+                </div>
+                <div class="weakness">
+                  <div class="sw-btn exp-btn">Weakness</div>
+                  <p>Sensitive / Conflict-Averse / Easily Bored</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
