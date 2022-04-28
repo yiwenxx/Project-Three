@@ -48,7 +48,7 @@ const imageArray = [
 function getRandomImage() {
   random_index = Math.floor(Math.random() * imageArray.length);
   selected_image = imageArray[random_index];
-  document.getElementById("image_shower").src = `img/meme/${selected_image}`;
+  document.getElementById("image_shower").src = `./img/meme/${selected_image}`;
 }
 
 getRandomImage();
