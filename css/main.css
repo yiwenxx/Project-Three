@@ -580,3 +580,202 @@ footer a {
   font-size: 14px;
   font-weight: 300;
 }
+
+/* Media Query */
+
+@media only screen and (max-width: 1200px) {
+  .typecards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 45vh 45vh;
+    column-gap: 3em;
+    row-gap: 3em;
+    margin: 4em 3em 5em 3em;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .parallax-section {
+    height: 110vh;
+  }
+
+  .content h2 {
+    margin-top: 40px;
+    font-size: 4.5em;
+    line-height: 1em;
+  }
+
+  .mbti-content {
+    margin: 2em 4em 1em 4em;
+    font-size: 0.9em;
+    max-width: 800px;
+    padding: 10px 30px 10px 30px;
+  }
+
+  .mbti-content p {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .slider {
+    width: 550px;
+    height: 500px;
+  }
+
+  .navigation-manual {
+    position: absolute;
+    width: 550px;
+    margin-top: 380px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navigation-auto {
+    position: absolute;
+    width: 550px;
+    margin-top: 380px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .description h3 {
+    margin-bottom: 1.2em;
+    margin-left: 2em;
+  }
+
+  .description p {
+    margin-bottom: 0.8em;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .taketest {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .taketest img {
+    padding-top: 100px;
+    margin-left: 1em;
+    width: 400px;
+    height: 400px;
+  }
+
+  .taketest a {
+    font-size: 20px;
+  }
+
+  .typecards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 45vh 45vh 45vh 45vh;
+    row-gap: 2em;
+    margin: 3em 3em 5em 3em;
+  }
+
+  .type h1 {
+    font-size: 2em;
+    font-weight: bolder;
+    margin: 1em 0 0.8em 0;
+  }
+
+  #header {
+    font-style: normal;
+    font-size: 3em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content h2 {
+    margin-top: 40px;
+    font-size: 3.5em;
+    line-height: 1em;
+  }
+
+  .mbti-content {
+    margin: 2em 2em 1em 2em;
+    font-size: 0.9em;
+    max-width: 800px;
+    padding: 10px 30px 10px 30px;
+  }
+
+  .mbti-content p {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .description h3 {
+    margin-bottom: 1.2em;
+    margin-left: 2em;
+  }
+
+  .description p {
+    margin-bottom: 0.8em;
+    margin-left: 2em;
+    margin-right: 2em;
+    max-width: 700px;
+  }
+
+  .taketest {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .taketest img {
+    display: none;
+  }
+
+  .taketest a {
+    font-size: 20px;
+  }
+
+  .typecards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 45vh 45vh 45vh 45vh;
+    row-gap: 2em;
+    margin: 3em 3em 5em 3em;
+  }
+
+  .type h1 {
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin: 1em 0 0.8em 0;
+  }
+
+  #header {
+    font-style: normal;
+    font-size: 3em;
+    line-height: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+
+  .card-back p {
+    line-height: 1.4em;
+    font-size: 0.95em;
+    margin: 2em 2em 0 2em;
+  }
+
+  .sw-btn {
+    width: 100px;
+    height: 30px;
+    margin-left: 2em;
+  }
+
+  .strength p,
+  .weakness p {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding-left: 1em;
+  }
+}
